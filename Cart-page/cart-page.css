@@ -1,0 +1,94 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.cart-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart-heading {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-bottom: 20%;
+}
+.number-of-items {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.cart-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+}
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#cart-image {
+    height: 5rem;
+    object-fit: cover;
+}
+p, .size {
+    font-size: 0.8rem;
+}
+.cloth-details {
+    height: 100%;
+    width: 100%;
+    margin-left: 5%;
+}
+.final-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+.final-details > * {
+     padding: 0 5%;
+}
+.cross-mark {
+    margin-left: 20%;
+}
+#cross-mark {
+    opacity: 0.6;
+}
+select {
+    border: none;
+    background-color: white;
+    font-size: 0.9rem;
+    opacity: 1;
+}
+#opacity{
+    opacity: 0.6;
+}
+.check-out-box {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-left: 12.1rem;
+}
+.checkout-button {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 50px;
+    background-color: #172c50;
+    color: white;
+    padding: 5% 40%;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.subtotal {
+    margin-left: 1.9rem
+}
+.footer {
+    display: none;
+}

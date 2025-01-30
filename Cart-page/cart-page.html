@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-Page</title>
+    <link rel = "stylesheet" href = "/common-styles.css"/>
+    <link rel = "stylesheet" href = "./cart-page.css"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"/>
+</head>
+<body>
+    <header class = "header">
+        <a class = "menu"><i class="menu-icon fas fa-bars"></i></a>
+        <h1 class = "shop-heading">SHOP</h1>
+        <a class = "cart"><i class="fas fa-shopping-cart"></i></a>
+    </header>
+
+    <main class = "cart-container">
+
+        <div class = cart-header>
+            <h2 class = "cart-heading">Your Cart</h2>
+            <p class = "number-of-items">(2 items)</p>
+           </div>
+
+           <div class="cart-items">
+            <div class = "cart-item one">
+                <a class = "image-link"><img id = "cart-image"src = "/Item-listing-images/10-24102B.jpg" alt = "Ladies Modern Stretch Full Zip.img"/></a>
+                <div class = "cloth-details">
+                    <p class = "name">Ladies Modern Stretch Full Zip    <span class = "cross-mark" id = "cross-mark" id = "opacity" >X</span></p>
+                    <div class = "final-details">
+             <label id = "opacity" class = "size">Qty:</label>
+                <select id = "">
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                </select>
+                <p id = "opacity" class = "selected-size">Size: M</p>
+                <p id = "opacity" class = "price">$41.60</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "cart-item two">
+                <a class = "image-link"><img id = "cart-image" src = "/Item-listing-images/10-24101B.jpg" alt = "Ladies Voyage Fleece Jacket.img"/></a>
+                <div class = "cloth-details">
+                    <p class = "name">Ladies Voyage Fleece Jacket  <span class = "cross-mark" id = "opacity">X</span></p>
+                    <div class = "final-details">
+             <label class = "size" id = "opacity">Qty:</label>
+                <select id = "">
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                </select>
+                <p id = "opacity"  class = "selected-size">Size: M</p>
+                <p id = "opacity" class = "price">$48.00</p>
+                    </div>
+                </div>
+            </div>
+
+           </div>
+           <div class = "check-out-box">Total:
+             <span class = "subtotal">$89.60</span>
+             <a class = "checkout-button">CHECKOUT</a>
+           </div>
+    
+    </main>
+
+    <footer class = "footer">
+        <p class = "shop-tag">Made by Polymer</p>
+        <a class = "demo">DEMO ONLY</a>
+    </footer>
+    
+</body>
+</html>
