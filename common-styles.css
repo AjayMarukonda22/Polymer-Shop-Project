@@ -18,7 +18,7 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-.menu {
+.menu, .left-arrow-icon {
     padding-left: 6%;
 }
 .cart {
