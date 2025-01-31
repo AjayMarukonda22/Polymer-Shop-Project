@@ -4,43 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-page</title>
-
-    <link rel = "stylesheet" href = "/common-styles.css"/>
-    <link rel = "stylesheet" href = "./homepage.css"/>
+    
+    <link rel ="stylesheet" href = "./reset.css"/>
+    <link rel = "stylesheet" href = "./common-styles.css"/>
+    <link rel = "stylesheet" href = "./index.css"/>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"/>
 </head>
 <body>
     <header class = "header">
-        <a class = "menu"><i class="menu-icon fas fa-bars"></i></a>
-        <h1 class = "shop-heading">SHOP</h1>
-        <a class = "cart">   <i class="fas fa-shopping-cart"></i></a>
+        <div><a class = "menu"><i class="menu-icon fas fa-bars"></i></a></div>
+        <a  href = "./index.html" class = "shop-heading">S H O P</a>
+        <a href = "/Cart-page/cart-page.html" class = "cart">   <i class="fas fa-shopping-cart"></i></a>
     </header>
 
+    <div class = "shop-tabs">
+        <a>Men's Outwear</a>
+        <a href = "/Item-Listing-Page/Item-listing.html">Ladies Outwear</a>
+        <a>Men's T-Shirt's</a>
+        <a>Ladies T-Shirt's</a>
+    </div>
+
     <main class = "main">
-        <div class = "section" id = "mens-clothing">
+        <div class = "section" id = "clothing">
         <a class = "image-link" href = ""><img class = "men's-outwear.img" class = "img" src = "/Home-page-images/mens_outerwear.jpg" alt = "men's-outwear.img"></a>
         <h2 class = "text">Men's Outwear</h2>
         <a class = "button" id = "big">SHOP NOW</a>
        </div>
 
-         <div class = "section" id = "womens-clothing">
-        <a class = "image-link" href = ""><img class = "women's-outwear.img" class= "img" src = "/Home-page-images/ladies_outerwear.jpg" alt = "women's-outwear.img"></a>
+         <div class = "section" id = "clothing">
+        <a href = "/Item-Listing-Page/Item-listing.html" class = "image-link" href = ""><img class = "women's-outwear.img" class= "img" src = "/Home-page-images/ladies_outerwear.jpg" alt = "women's-outwear.img"></a>
         <h2 class = "text">Ladies Outwear</h2>
-        <a class = "button" id = "big">SHOP NOW</a>
+        <a href = "/Item-Listing-Page/Item-listing.html" class = "button" id = "big">SHOP NOW</a>
         </div>
 
            <div class = "section" id = "aside-container">
 
             <div class = "mens-tshirts" id = "t-shirts">
-            <a class = "image-link" href = ""><img class = "Men's T-shirt.img" class = "img" src = "/Home-page-images/mens_tshirts.jpg" alt = "men's t-shirt.img"/></a>
+            <a class = "image-link" href = ""><img  class = "img" src = "/Home-page-images/mens_tshirts.jpg" alt = "men's t-shirt.img"/></a>
             <h2 class = "text" id = "aside">Men's T-Shirts</h2>
             <a class = "button" id = "aside-button">SHOP NOW</a>
           </div>
 
            <div class = "womens-tshirts" id = t-shirts>
-            <a class = "image-link" href = ""><img class = "Ladies's T-shirt.img" class = "img" src = "/Home-page-images/ladies_tshirts.jpg" alt = "ladies t-shirt.img"/></a>
+            <a class = "image-link" href = ""><img class = "img" src = "/Home-page-images/ladies_tshirts.jpg" alt = "ladies t-shirt.img"/></a>
             <h2 class = "text" id = "aside">Ladies T-Shirts</h2>
             <a class = "button" id = "aside-button">SHOP NOW</a>
            </div>

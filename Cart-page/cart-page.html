@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart-Page</title>
+
+    <link rel ="stylesheet" href = "/reset.css"/>
     <link rel = "stylesheet" href = "/common-styles.css"/>
     <link rel = "stylesheet" href = "./cart-page.css"/>
     <link
@@ -12,9 +14,9 @@
 </head>
 <body>
     <header class = "header">
-        <a class = "menu"><i class="menu-icon fas fa-bars"></i></a>
-        <h1 class = "shop-heading">SHOP</h1>
-        <a class = "cart"><i class="fas fa-shopping-cart"></i></a>
+        <div><a class = "menu"><i class="menu-icon fas fa-bars"></i></a></div>
+        <a href = "/index.html" class = "shop-heading">S H O P</a>
+        <a href = "/Cart-page/cart-page.html" class = "cart"><i class="fas fa-shopping-cart"></i></a>
     </header>
 
     <main class = "cart-container">
@@ -26,9 +28,10 @@
 
            <div class="cart-items">
             <div class = "cart-item one">
-                <a class = "image-link"><img id = "cart-image"src = "/Item-listing-images/10-24102B.jpg" alt = "Ladies Modern Stretch Full Zip.img"/></a>
+                <a href = "/Single-Item-Page/single-item.html" class = "image-link"><img id = "cart-image"src = "/Item-listing-images/10-24102B.jpg" alt = "Ladies Modern Stretch Full Zip.img"/></a>
                 <div class = "cloth-details">
-                    <p class = "name">Ladies Modern Stretch Full Zip    <span class = "cross-mark" id = "cross-mark" id = "opacity" >X</span></p>
+                    <p class = "name">Ladies Modern Stretch Full Zip</p>
+
                     <div class = "final-details">
              <label id = "opacity" class = "size">Qty:</label>
                 <select id = "">
@@ -41,13 +44,15 @@
                 <p id = "opacity" class = "selected-size">Size: M</p>
                 <p id = "opacity" class = "price">$41.60</p>
                     </div>
+                    <i id = "cross-mark" class="fas fa-times cross"></i>
                 </div>
             </div>
 
             <div class = "cart-item two">
                 <a class = "image-link"><img id = "cart-image" src = "/Item-listing-images/10-24101B.jpg" alt = "Ladies Voyage Fleece Jacket.img"/></a>
                 <div class = "cloth-details">
-                    <p class = "name">Ladies Voyage Fleece Jacket  <span class = "cross-mark" id = "opacity">X</span></p>
+                    <p class = "name">Ladies Voyage Fleece Jacket</p>
+
                     <div class = "final-details">
              <label class = "size" id = "opacity">Qty:</label>
                 <select id = "">
@@ -60,15 +65,15 @@
                 <p id = "opacity"  class = "selected-size">Size: M</p>
                 <p id = "opacity" class = "price">$48.00</p>
                     </div>
+                    <i id = "cross-mark" class="fas fa-times cross"></i>
                 </div>
             </div>
 
            </div>
-           <div class = "check-out-box">Total:
-             <span class = "subtotal">$89.60</span>
-             <a class = "checkout-button">CHECKOUT</a>
+           <div class = "check-out-box">
+             <div class = "money"><span class = "total">Total: </span><span class = "subtotal">$89.60</span></div>
+             <a href = "/Checkout-Page/checkout.html" class = "checkout-button">CHECKOUT</a>
            </div>
-    
     </main>
 
     <footer class = "footer">

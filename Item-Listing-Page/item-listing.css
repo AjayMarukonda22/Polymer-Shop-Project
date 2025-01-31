@@ -9,17 +9,21 @@
     justify-content: center;
     align-items: center;
 }
+.image-link {
+    display: none;
+}
 .item-heading {
-    margin-top: 1%;
+    margin-top: 1rem;
     font-size: 0.9rem;
     font-weight: lighter;
 }
 .number-of-items {
     font-size: 0.8rem;
     opacity: 0.5;
-    margin-top: 2%;
+    margin-top: 1.2rem;
 }
 .items {
+    margin-top: 1rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -29,15 +33,16 @@
     column-gap: 2%;
 }
 .item {
+    height: 27vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 37.5%;
-    margin: 8% 3%;
+    width: 38.5%;
+    margin: 10% 3%;
 }
 #img {
-    height: 19vh;
+    height: 100%;
 }
 .price {
     font-size: 0.8rem;
@@ -45,10 +50,67 @@
     margin: 1.3% 0;
 }
 .title {
-    margin-top: 8%;
-    display: block;
+    margin-top: 10%;
     font-weight: bold;
     font-size: 0.8rem;
     text-align: center;
     line-height: 1.3rem;
+}
+
+@media (min-width: 768px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .menu {
+        display: none;
+    }
+    .shop-tabs {
+        margin-top: 1rem;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+    }
+    .shop-tabs > * {
+        padding: 0.5rem 1.2rem;;
+    }
+    .image-link {
+        display:block;
+        padding-top: 1rem;
+    }
+    .item-heading {
+        margin-top: 3rem;
+    }
+    .shop-tabs.ladies-wear {
+        border: 2px solid black;
+    }
+    
+    #ladies-wear {
+        border-bottom: 2px solid black;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .items {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item {
+        height: 100%;
+        width: 100%;
+    }
+
+    #ladies-tshirt {
+        padding-left: 0.5rem;
+   }
+
+   #banner {
+    max-width: 1440px;  
+    width: 100%;        
+    display: block;     
+    margin: 0 auto;   
+}
 }

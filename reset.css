@@ -1,10 +1,11 @@
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 
-/* Remove all the styles of the "User-Agent-, except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
-    all: unset;
-    display: revert;
-  }
+**:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
   
   /* Preferred box-sizing value */
   *,
@@ -18,7 +19,7 @@
     in case you use it with normalize.css
   */
   ol, ul {
-    list-style: none;
+    list-style-type: disc;;
   }
   
   /* For images to not be able to exceed their container */
@@ -35,3 +36,8 @@
   textarea {
     white-space: revert;
   }
+
+  select {
+    all: revert; /* Restores default styles */
+    appearance: revert; /* Ensures the dropdown arrow is restored */
+}

@@ -1,0 +1,90 @@
+.shop-tabs {
+    display: none;
+}
+.text {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3vh;
+    margin-bottom: 3rem;
+}
+ .button{
+    border: 2px solid black;
+    font-size: 16px;
+    padding: 0.6rem 2.5rem;
+    opacity:0.8;
+}
+#aside-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+#aside-button {
+    padding: 0.6rem 1.5rem  ;
+}
+
+#t-shirts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.8rem;
+}
+.text#aside {
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    .main{
+        width: 100vw;
+    }
+    img {
+        width: 100vw;
+    }
+    .menu {
+        display: none;
+    }
+    .shop-tabs {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+    }
+    .shop-tabs > * {
+        padding: 1.5rem 1.2rem;;
+    }
+    #t-shirts img{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1441px) {
+
+    .shop-tabs {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+    }
+    .shop-tabs > * {
+        padding: 1.5rem 1.2rem;;
+    }
+
+    #aside-button {
+        padding: 0.6rem 2.5rem;
+    }
+
+    #clothing img {
+        max-width: 1296px;
+    }
+    #aside-container img {
+        max-width: 648px;
+    }
+}
